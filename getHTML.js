@@ -18,7 +18,6 @@ function getHTML(options, callback) {
       console.log('Response stream complete.');
     });
   });
-
 }
 
 function printHTML (html) {
