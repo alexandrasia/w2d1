@@ -11,11 +11,10 @@ function getHTML(options, callback) {
     response.on('data', function (data) {
 
       html += data;
-      console.log(html + '\n');
     });
 
     response.on('end', function () {
-      console.log('Response stream complete.');
+      callback(html);
     });
   });
 }
